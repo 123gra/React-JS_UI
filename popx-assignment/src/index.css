@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f5f7;
+}
+
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f7;
+}
+
+.app-shell {
+  width: 375px;
+  height: 812px;
+  background-color: #f8f8fb;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e4e4ea;
+}
+
+
+.screen {
+  padding: 24px 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+label,
+button {
+  letter-spacing: 0.2px;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: "pointer";
+}
+
+.primary-btn {
+  background: #6a0fff;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  background: #efe0ff;
+  color: #6a0fff;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.input-label {
+  font-size: 12px;
+  color: #6b6b7a;
+}
+
+.input-label span {
+  color: #ff3b30;
+}
+
+.input-field {
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #dedee8;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #b2b2c5;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #181820;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #6b6b7a;
+}
+
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #2e2e3a;
+}
+
+.radio-input {
+  accent-color: #6a0fff;
+}
+
+
+.account-header {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid #ededf3;
+  background-color: #f8f8fb;
+}
+
+.account-body {
+  padding: 16px;
+}
+
+.account-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #d2d2e0;
+}
+
+.avatar-badge {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6a0fff;
+  border: 2px solid #ffffff;
+}
+
+.account-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #181820;
+}
+
+.account-email {
+  font-size: 12px;
+  color: #8a8a9b;
+  margin-bottom: 8px;
+}
+
+.account-description {
+  font-size: 12px;
+  color: #686878;
+  line-height: 1.5;
+  margin-top: 12px;
+}
